@@ -40,7 +40,7 @@ export const appConfig: ApplicationConfig = {
     UserTrackingService,
     provideAppCheck(() => {
       const provider = new ReCaptchaEnterpriseProvider(
-        'https://www.google.com/recaptcha/enterprise.js?render=6LdaPzAqAAAAAJlOykmPp34VS4-nH4ypLmKANXQB'
+        'https://www.google.com/recaptcha/enterprise.js?render=6Lc9OTMqAAAAABXhnouA3SMR53OQSouy_zkShp68'
       );
       return initializeAppCheck(undefined, {
         provider,
