@@ -1,0 +1,29 @@
+<article
+  class="relative card bg-base-100 max-w-96 shadow hover:shadow-xl transition-shadow"
+>
+  <figure>
+    <!-- <img class="w-full" [ngSrc]="recipe.image" width="200" height="100" alt="Shoes" priority /> -->
+    <img
+      class="w-full"
+      ngSrc="/assets/images/home-bottom.webp"
+      width="200"
+      height="400"
+      alt="Shoes"
+      priority
+    />
+  </figure>
+  <div class="card-body">
+    <a
+      [routerLink]="['/recipes', recipe.slug]"
+      class="before:absolute before:inset-0"
+    >
+      <h2 class="card-title">{{ recipe.title }}</h2>
+    </a>
+    <div>
+      by <strong>{{ recipe.author }}</strong>
+    </div>
+    <p class="line-clamp-3 leading-tight h-[calc(1.25*1rem*3)]">
+      {{ recipe.description }}
+    </p>
+  </div>
+</article>
